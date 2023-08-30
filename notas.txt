@@ -1,0 +1,3 @@
+1 Trabajar con versiones de boostrap 4.5.2 para el header y body (footer 5.3)
+2 Archivo navbarindex (ver si es necesario su implementacion)
+3 header.css mediante link no funciona igual que implementado en el head 

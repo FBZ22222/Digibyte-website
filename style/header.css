@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/img/bg-total.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.espaciador{
+    margin-bottom: 4%;
+}
+
+.navbar--set{
+    padding: 0;
+    background-color: transparent;
+}
+
+.navbar--colored{
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__link{
+    color: black;
+}
+
+.navbar__link {
+    transition: background-color 0.3s ease; 
+    
+}
+
+.navbar__link:hover {
+    background-color: #0f0c97;
+    color: #ffffff; 
+}
+
+.navbar-toggler i {
+    color: rgb(19, 19, 145); /* Cambia esto por el color que desees */
+    font-size: xx-large;
+}
+
+
+
+
+
+
+

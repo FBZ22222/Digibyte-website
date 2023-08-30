@@ -1,0 +1,112 @@
+.servicios {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.servicios__contenedor,
+.servicios__contenedor--reverse {
+    display: grid;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.servicios__contenedor {
+    grid-template-columns: 1fr 3fr;
+}
+
+.servicios__contenedor--reverse {
+    grid-template-columns: 3fr 1fr;
+}
+
+.servicios__boximg {
+    position: relative;
+    min-height: 225px;
+}
+
+.servicios__img,
+.servicios__img--reverse {
+    position: absolute;
+    max-width: 400px;
+}
+
+.servicios__img {
+    left: 50px;
+}
+
+.servicios__img--reverse {
+    right: 50px;
+}
+
+.servicios__texto,
+.servicios__texto--reverse {
+    background-color: #2981b4;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+}
+
+.servicios__texto--reverse {
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 10px;
+}
+
+.servicios__parrafo,
+.servicios__parrafo--reverse {
+    padding: 40px 30px 40px 25%;
+}
+
+.servicios__parrafo--reverse {
+    padding: 40px 25% 40px 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Agregamos un breakpoint para pantallas de hasta 768px */
+@media (max-width: 992px) {
+    .servicios {
+        grid-template-rows: auto auto auto; /* Cambia la disposición de las filas */
+    }
+
+    .servicios__boximg{
+        min-height: auto ;
+    }
+    
+    .servicios__contenedor,
+    .servicios__contenedor--reverse {
+        grid-template-columns: 1fr; /* Cambia la disposición de las columnas */
+        background-color: #2981b4;
+        border-radius: 50px;
+    }
+
+    .servicios__img,
+    .servicios__img--reverse {
+        position: static; /* Cambia la posición de las imágenes */
+        display: flex;
+        max-width: 50%; /* Ajusta el ancho máximo de las imágenes */
+        margin: 0 auto; /* Centra las imágenes */
+        justify-content: center;
+    }
+
+    .servicios__parrafo,
+    .servicios__parrafo--reverse {
+        padding: 40px; /* Ajusta el relleno de los párrafos */
+    }
+    .servicios__texto,
+    .servicios__texto--reverse {
+        border-radius: 0;
+        background-color: transparent;
+    }
+}
