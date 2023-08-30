@@ -1,0 +1,15 @@
+/* caarrusel */
+ /* Tamaño específico para cada imagen */
+ .carousel-inner .carousel-item img {
+    background-color: blue;
+    width: 100%; /* Ancho máximo */
+    height: auto; /* Mantiene la proporción */
+    max-height: 500px; /* Altura máxima */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.carousel{
+    margin-top: 97px;
+}
+
+/* caarrusel */

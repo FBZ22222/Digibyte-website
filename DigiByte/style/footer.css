@@ -1,0 +1,83 @@
+/* solo prueba no incluir */
+
+.prueba{
+  width: 500px;
+  height: 500px;
+  border: solid #5B6DCD 10px;
+  padding: 90px;
+  text-align: center;
+  background-color: yellow;
+}
+/* solo prueba no incluir */
+
+/* diseño de footer */
+footer{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+.contenedor-copy{
+    background-color: rgb(58, 58, 58);
+}
+.copyright{
+    text-align: center;
+}
+
+/* diseño de footer */
+
+/* iconos */
+.iconosredes{
+    font-size: 25px;
+    display: inline-block;
+}
+.bi-instagram {
+    color: #E4405F;
+  }
+/* animacion */
+.icon-animate {
+    animation: jump 1.0s ease-in-out infinite;
+  }
+  .icon-animate:hover {
+    animation-play-state: paused; /*pausa la animacion/*
+    /* animation: none; Detiene la animación */
+  }
+  
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+/* iconos */
+
+
+
+/*image hoover */
+.image-container {
+    overflow: hidden; /* Para recortar la imagen cuando se agranda */
+}
+
+.zoom-image {
+    transition: transform 0.3s; /* Agregar una transición suave */
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); /* Escalar la imagen en un 110% */
+} 
+
+
+/* image hoover */
+
+/* Cambiar el tamaño de la imagen antes del breakpoint "md" */
+@media (max-width: 768px) {
+    .img-size {
+      width: 75%; /* Ajustar el valor */
+      max-width: none; /* Anular la propiedad max-width predeterminada de Bootstrap */
+    }
+  }
+
+
+/* experimento */
+
+  

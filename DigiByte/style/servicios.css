@@ -1,0 +1,107 @@
+
+
+.services__container {
+
+    text-align: center;
+
+    padding: 20px;
+
+   
+
+ 
+
+}
+
+ 
+
+.services__box {
+
+    margin-bottom: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    border: 2px solid #ddd;
+
+    background-color: #fff;
+
+    font-family: Arial, sans-serif;
+
+    color: #f8f8f8;
+
+    opacity: 0; /* Inicialmente, la caja está oculta */
+
+    transition: opacity 0.5s;
+
+   
+
+}
+ 
+
+.services__box.right-text {
+
+    background-image: url("/img/bg-quienes-somos.jpg");
+    /* background-color: green; */
+
+}
+
+ 
+
+.services__img {
+
+    max-width: 400px; /* Ajusta el tamaño de la imagen según tus necesidades */
+
+    height: auto;
+
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+
+    flex-shrink: 0;
+
+}
+
+ 
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+ 
+
+@media (max-width: 768px) {
+
+    .services__box {
+
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+
+        align-items: center;
+
+    }
+
+    .services__img {
+
+        margin-bottom: 0; /* Elimina el espacio entre la imagen y el texto */
+
+    }
+
+}
